@@ -1,25 +1,121 @@
+*{
+      padding: 0;
+      margin: 0;
+}
+
+.main-container{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(233, 206, 206, 0.592), rgba(167, 227, 16, 0.592), rgba(6, 80, 216, 0.592));
+}
+
 .container{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      /* gap: 20px; */
+      align-items:flex-start;
+      height: 350px;
+      width: 320px;
+      border-radius: 10px;
+      background-color: rgb(228, 224, 224);
+      padding: 12px 18px;
+      gap: 10px;
 }
 
-.tasklist{
+.heading{
+      font-size: 21px;
+      font-weight: 600;
+}
+
+.input-container{
+      width: 90%;
+      padding : 8px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+#taskInput{
+      width: 100%;
+      height: 30px;
+      padding: 0 10px;
+      border: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      color: rgb(107, 106, 106);
+}
+
+#addTask{
+      width: 60px;
+      height: 30px;
+      border: none;
+      font-size: 13px;
+      cursor: pointer;
+      color: white;
+      background-color: rgb(226, 148, 2);
+      border-radius: 5px;
+}
+
+
+#tasklist{
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      list-style-type:circle;
-
+      gap: 5px;
+      height: 260px;
+      width: 100%;
+      overflow-y:scroll;
 }
 
 .task{
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-
+      justify-content: space-between;
+      gap: 5px;
+      width: 90%;
+      font-size: 15px;
+      padding-left: 5px;
+      border-radius: 15px;
 }
 
+.check{
+      height: 15px;
+      width: 15px;
+      border-style: none;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 1px solid black;
+}
 
+.check:hover{
+      background-color: rgb(226, 148, 2);
+      border: none;
+}
+.delete{
+      width: 15%;
+      height: 25px;
+      border: none;
+      font-size: 13px;
+      color: black;
+      border-top-right-radius: 14px;
+      border-bottom-right-radius: 14px;    
+}
+
+.delete:hover{
+      cursor: pointer;
+      background-color: rgb(226, 148, 2);
+}
+
+p{
+      width: 85%;
+      /* text-overflow: ellipsis; */
+}
+
+.task:hover{
+      background-color: rgb(218, 218, 217);
+      border-style: none;
+}     
