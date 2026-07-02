@@ -1,0 +1,25 @@
+.container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* gap: 20px; */
+}
+
+.tasklist{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      list-style-type:circle;
+
+}
+
+.task{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+}
+
+
